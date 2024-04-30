@@ -13,7 +13,7 @@ class PlanetsSlider extends Component {
     const {index} = this.state
     const {planetsList} = this.props
     if (index !== 0) {
-      this.setState({activeId: planetsList[index - 1].id, index: index - 1})
+      this.setState((prevState=>({activeId: planetsList[prevState.index - 1].id, index:prevState.index - 1}))
     }
   }
 
@@ -21,7 +21,7 @@ class PlanetsSlider extends Component {
     const {index} = this.state
     const {planetsList} = this.props
     if (index !== planetsList.length - 1) {
-      this.setState({activeId: planetsList[index + 1].id, index: index + 1})
+      this.setState((prevState=>({activeId: planetsList[prevState.index + 1].id, index:prevState.index + 1}))
     }
 
   }
