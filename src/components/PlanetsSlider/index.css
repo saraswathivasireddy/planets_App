@@ -1,0 +1,25 @@
+/* Write your CSS here */
+.planet-slider-bg-container {
+  height: 100vh;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/planets-app/planets-bg-img.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-button-style {
+  margin-right: 60px;
+  color: #f1f5f9;
+}
+.right-button-style {
+  margin-left: 60px;
+  color: #f1f5f9;
+}
+
+.onclick-buttons {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
